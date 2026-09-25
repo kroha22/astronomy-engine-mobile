@@ -105,6 +105,12 @@ unchanged and retains Don Cross's copyright and MIT notice. See
 Our C wrapper, Kotlin API, Swift API, tests, build files, and documentation are
 covered by the repository's MIT license in [`LICENSE`](LICENSE).
 
+The Android AAR also carries `META-INF/ASTRONOMY_ENGINE_MOBILE_LICENSE`,
+`META-INF/ASTRONOMY_ENGINE_MOBILE_NOTICE`, and
+`META-INF/THIRD_PARTY_NOTICES.md`, so applications embedding the artifact can
+expose the required acknowledgments without reconstructing them from the source
+repository.
+
 The license permits commercial use, modification, redistribution, and private
 use, subject to preserving the required copyright and license notices. This is
 an engineering summary, not legal advice.

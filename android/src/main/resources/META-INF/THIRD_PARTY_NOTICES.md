@@ -1,6 +1,15 @@
+# Third-party notices
+
+## Astronomy Engine
+
+- Project: https://github.com/cosinekitty/astronomy
+- Version: v2.1.19
+- Resolved commit: 61dc07020aaa6885d2c7f688a4d82beaf6edb9ef
+- License: MIT
+
 MIT License
 
-Copyright (c) 2026 Olga Cherepanova
+Copyright (c) 2019-2023 Don Cross <cosinekitty@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
