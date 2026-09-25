@@ -5,6 +5,7 @@ build/
 **/build/
 **/.cxx/
 .swiftpm/
+.build/
 DerivedData/
 *.xcframework
 local.properties
