@@ -35,6 +35,7 @@ first version. Adding them requires a separately specified and tested contract.
 Sources/CAstronomyEngine/       C wrapper and pinned upstream C engine
 Sources/AstronomyEngineMobile/  Swift API
 android/                        Kotlin/JNI Android library
+comparison-app/                 test-only Android app for Kotlin parity checks
 native-tests/                   portable C contract tests
 third_party/                    upstream license and provenance
 ```
@@ -76,6 +77,10 @@ ctest --test-dir build/native --output-on-failure
 
 swift test
 ./gradlew :android:assembleRelease
+# Optional test-only Android app: official Kotlin parity + independent fixtures.
+./gradlew :comparison-app:assembleDebugAndroidTest
+# With an emulator/device connected:
+./gradlew :comparison-app:connectedDebugAndroidTest
 ```
 
 The Android module currently builds the four standard ABIs configured by the

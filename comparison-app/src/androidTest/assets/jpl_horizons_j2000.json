@@ -1,0 +1,19 @@
+{
+  "source": "NASA/JPL Horizons DE441 apparent ECT fixtures",
+  "sourceUrl": "https://ssd.jpl.nasa.gov/horizons/",
+  "epochUtc": "2000-01-01T12:00:00Z",
+  "epochMilliseconds": 946728000000,
+  "bodyLongitudesDegrees": {
+    "Sun": 280.3689092,
+    "Moon": 223.3237860,
+    "Mercury": 271.8892699,
+    "Venus": 241.5657794,
+    "Mars": 327.9632921,
+    "Jupiter": 25.2530685,
+    "Saturn": 40.3956366,
+    "Uranus": 314.8091680,
+    "Neptune": 303.1930007,
+    "Pluto": 251.4547644
+  },
+  "trueOsculatingLunarAscendingNodeDegrees": 123.9580554371928
+}

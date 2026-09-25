@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    `maven-publish`
 }
 
 group = "com.nyra.astronomy"
@@ -22,6 +23,12 @@ android {
         }
     }
 
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -30,4 +37,17 @@ android {
 
 kotlin {
     jvmToolchain(17)
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.kroha22"
+            artifactId = "astronomy-engine-mobile"
+            version = project.version.toString()
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
